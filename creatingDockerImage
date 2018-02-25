@@ -1,0 +1,15 @@
+step 1:  create the manifest for the java Jar file
+
+step 2: from command line run -> jar cfm HelloWorld.jar manifest.txt HelloWorld.class .
+	--> this creates the jar file
+	--> test the jar file by running : java -jar HelloWorld.jar
+
+step 3: create the Dockerfile
+	--> leave empty space at the end of the file
+
+step 4: run in command line -> docker build -t helloworld .
+	--> this builds the docker image
+
+step 5: check the images -> docker image ls
+
+step 6: run the docker image -> docker run /helloworld
